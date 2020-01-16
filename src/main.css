@@ -13,6 +13,35 @@ body > * {
   padding: 0.3rem;
 }
 
+nav {
+  display: grid;
+  grid-template-columns: auto 10rem 1fr 10rem auto;
+  grid-template-areas: "title . search-box . account";
+}
+
+.title {
+  grid-area: title;
+}
+
+.search-box {
+  grid-area: search-box;
+  text-align: center;
+  background-color: #553;
+}
+
+.account {
+  grid-area: account;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas:
+      "title . account"
+      "search-box search-box search-box";
+  }
+}
+
 .detail-kendaraan {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -65,12 +94,12 @@ body > * {
 .gambar-jalan {
   background-image: url("https://picsum.photos/500");
   background-position: center;
-  /*background-repeat: no-repeat;*/
   background-size: cover;
   min-height: 500px;
 }
 
 .update-terakhir {
+  text-align: center;
   color: #222;
   background-color: #eee;
   padding: 1rem;
