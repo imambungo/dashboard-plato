@@ -10,7 +10,7 @@ body {
 
 body > * {
   background-color: #444;
-  padding: 2rem;
+  padding: 0.3rem;
 }
 
 .detail-kendaraan {
@@ -57,15 +57,24 @@ body > * {
   padding: 1rem;
 }
 
-/*
-.arus-kopang {
-  grid-area: arus-kopang;
+.foto-jalan {
+  display: grid;
+  grid-template-rows: 1fr;
 }
 
-.arus-mataram {
-  grid-area: arus-mataram;
+.gambar-jalan {
+  background-image: url("https://picsum.photos/500");
+  background-position: center;
+  /*background-repeat: no-repeat;*/
+  background-size: cover;
+  min-height: 500px;
 }
-*/
+
+.update-terakhir {
+  color: #222;
+  background-color: #eee;
+  padding: 1rem;
+}
 
 @media screen and (min-width: 768px) {
   body {
