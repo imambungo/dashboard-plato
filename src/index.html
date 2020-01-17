@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Dashboard Plato</title>
     <link rel="stylesheet" href="main.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <script
       src="https://kit.fontawesome.com/64fa2c26e2.js"
       crossorigin="anonymous"
@@ -117,12 +118,16 @@
     </div>
     <div class="komposisi-arah">
       <div>KOMPOSISI ARAH</div>
-      <div class="pie-chart">pie chart</div>
+      <canvas id="pie-chart"></canvas>
     </div>
-    <div class="grafik-perhari">grafik total kendaraan per hari</div>
+    <div class="grafik-perhari">
+      <div>GRAFIK TOTAL JUMLAH KENDARAAN PER HARI</div>
+      <canvas id="bar-chart"></canvas>
+    </div>
     <div class="volume-kopang">grafik volume kendaraan arah kopang</div>
     <div class="volume-mataram">grafik volume kendaraan arah mataram</div>
     <div class="kecepatan-kopang">grafik kecepatan rata2 arah kopang</div>
     <div class="kecepatan-mataram">grafik kecepatan rata2 arah mataram</div>
   </body>
+  <script src="main.js"></script>
 </html>
