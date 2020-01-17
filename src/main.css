@@ -1,11 +1,14 @@
+html {
+  font-size: 2vmin;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 18px;
   background-color: #7ebceb;
   color: #3b5871;
   display: grid;
   grid-gap: 2rem;
-  padding: 2rem;
+  /*padding: 2rem 0rem;*/
   grid-template-columns: 1fr;
 }
 
@@ -42,7 +45,7 @@ button {
   grid-area: account;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   nav {
     grid-template-columns: auto 1fr auto;
     grid-template-areas:
@@ -148,7 +151,8 @@ button {
   background-image: url("https://picsum.photos/500");
   background-position: center;
   background-size: cover;
-  min-height: 500px;
+  /*min-height: 500px;*/
+  padding-top: 100%; /* https://stackoverflow.com/a/34076422/9157799 */
 }
 
 .update-terakhir {
@@ -158,9 +162,11 @@ button {
   padding: 1rem;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   body {
     padding: 2rem 4rem;
+    width: 99%;
+    box-sizing: border-box;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
       "nav nav"
@@ -191,5 +197,11 @@ button {
 
   header {
     grid-area: header;
+  }
+}
+
+@media screen and (min-width: 769px) and (orientation: portrait) {
+  body {
+    padding: 1rem;
   }
 }
