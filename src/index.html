@@ -21,7 +21,11 @@
           <button type="submit"><i class="fa fa-search"></i></button>
         </form>
       </div>
-      <div class="account">intens</div>
+      <div class="account">
+        <i class="fas fa-user-circle"></i>
+        intens
+        <i class="fas fa-angle-down"></i>
+      </div>
     </nav>
     <div class="detail-kendaraan detail-kopang">
       <div class="arah">
@@ -74,7 +78,11 @@
         </div>
         <i class="fa fa-arrow-down"></i>
       </div>
-      <div class="kecepatan"></div>
+      <div class="kecepatan">
+        <div>Kecepatan Rata-Rata</div>
+        <div>64</div>
+        <div>Km/h</div>
+      </div>
       <div class="detail">
         <div>
           <div>10</div>
@@ -109,12 +117,24 @@
     </div>
     <header>ARUS KENDARAAN</header>
     <div class="arus-kendaraan arus-kopang">
-      <div class="arah-arus">arah kopang</div>
-      <div class="smp-perjam">526 smp/jam</div>
+      <div class="arah-arus">
+        <i class="fas fa-car-side"></i>
+        <div>Arah Kopang</div>
+      </div>
+      <div class="smp-perjam">
+        <div>526</div>
+        <div>SMP/jam</div>
+      </div>
     </div>
     <div class="arus-kendaraan arus-mataram">
-      <div class="arah-arus">arah mataram</div>
-      <div class="smp-perjam">230 smp/jam</div>
+      <div class="arah-arus">
+        <i class="fas fa-car-side"></i>
+        <div>Arah Mataram</div>
+      </div>
+      <div class="smp-perjam">
+        <div>230</div>
+        <div>SMP/jam</div>
+      </div>
     </div>
     <div class="komposisi-arah">
       <div>KOMPOSISI ARAH</div>
@@ -124,6 +144,9 @@
       <div>GRAFIK TOTAL JUMLAH KENDARAAN PER HARI</div>
       <canvas id="bar-chart"></canvas>
     </div>
+    <!--
+    <canvas id="line"></canvas>
+    -->
     <div class="volume-kopang">grafik volume kendaraan arah kopang</div>
     <div class="volume-mataram">grafik volume kendaraan arah mataram</div>
     <div class="kecepatan-kopang">grafik kecepatan rata2 arah kopang</div>

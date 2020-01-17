@@ -38,3 +38,11 @@ var bar_chart = new Chart(bar_ctx, {
   },
   options: {},
 });
+
+// line
+var line_ctx = document.getElementById("line-chart").getContext("2d");
+var line_chart = new Chart(line_ctx, {
+  type: "line",
+  data: {},
+  options: {},
+});

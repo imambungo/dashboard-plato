@@ -13,11 +13,12 @@ body {
 }
 
 body > * {
-  background-color: #afd2e9;
+  /* background-color: #afd2e9; */
   padding: 0rem;
 }
 
 nav {
+  /* font-size: 1.4rem; */
   display: grid;
   grid-template-columns: auto 11rem 1fr 11rem auto;
   grid-template-areas: "title . search-box . account";
@@ -29,7 +30,6 @@ nav {
 
 .search-box {
   grid-area: search-box;
-  text-align: center;
   background-color: #553;
 }
 
@@ -132,14 +132,27 @@ button {
   grid-template-columns: 1fr 1fr;
 }
 
-.arah-arus {
+.arah-arus,
+.smp-perjam {
   background-color: #aaa;
-  padding: 1rem;
+  display: flex;
+  min-height: 6rem;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0.3rem;
+}
+
+.arah-arus i {
+  font-size: 2.5rem;
+}
+
+.smp-perjam div:nth-child(1) {
+  font-size: 2.5rem;
 }
 
 .smp-perjam {
   background-color: #fff;
-  padding: 1rem;
 }
 
 .foto-jalan {
