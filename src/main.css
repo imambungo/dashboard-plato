@@ -90,7 +90,7 @@ button {
 }
 
 .kecepatan {
-  color: ##c5c8c4;
+  color: #c5c8c4;
   grid-area: kecepatan;
   background-color: #3f4b3b;
   padding: 1rem;
@@ -157,7 +157,7 @@ button {
 
 .update-terakhir {
   text-align: center;
-  color: ##ccded0;
+  color: #ccded0;
   background-color: #5a9367;
   padding: 1rem;
 }
