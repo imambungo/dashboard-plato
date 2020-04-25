@@ -20,37 +20,69 @@ body > * {
 nav {
   /* font-size: 1.4rem; */
   display: grid;
-  grid-template-columns: auto 11rem 1fr 11rem auto;
+  align-items: center;
+  grid-template-columns: auto 1fr 8fr 1fr auto;
   grid-template-areas: "title . search-box . account";
+  height: 2rem;
+  font-size: 1.5rem;
 }
 
 .title {
   grid-area: title;
 }
 
+form {
+  display: flex;
+}
+
 .search-box {
   grid-area: search-box;
-  background-color: #553;
+  position: relative;
 }
 
 input {
+  height: 100%;
+  display: block;
+  position: relative;
   width: 80%;
+  color: #444;
+  background: #dfdfdf;
+  border: 1px solid #3b5871;
+  padding: 0.5rem;
+  font-size: 1.3rem;
+  margin-right: 2px;
+}
+
+input:focus {
+  outline: none;
 }
 
 button {
-  width: 18%;
+  position: relative;
+  background: none;
+  border: 1.5px solid #3b5871;
+  color: #333;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 1.3rem;
+  flex: 1;
 }
 
 .account {
   grid-area: account;
 }
 
+/* HP */
 @media screen and (max-width: 1024px) {
   nav {
     grid-template-columns: auto 1fr auto;
     grid-template-areas:
       "title . account"
       "search-box search-box search-box";
+    margin-bottom: 3rem;
+  }
+  .search-box {
+    margin-top: 1rem;
   }
 }
 
@@ -175,6 +207,7 @@ button {
   padding: 1rem;
 }
 
+/* laptop */
 @media screen and (min-width: 769px) {
   body {
     padding: 2rem 4rem;
@@ -213,6 +246,7 @@ button {
   }
 }
 
+/* ipad dkk */
 @media screen and (min-width: 769px) and (orientation: portrait) {
   body {
     padding: 1rem;
